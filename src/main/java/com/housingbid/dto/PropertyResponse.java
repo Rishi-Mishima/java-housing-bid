@@ -1,22 +1,22 @@
 package com.housingbid.dto;
 
 public class PropertyResponse {
-    private String postcode;
-    private int houseNumber;
+    private int postcode;
+    private String houseNumber;
     private String city;
 
-    public PropertyResponse(int houseNumber, String postcode, String city) {
+    public PropertyResponse(String houseNumber, int postcode, String city) {
         this.houseNumber = houseNumber;
         this.postcode = postcode;
         this.city = city;
     }
 
-    public String getPostcode() {
+    public int getPostcode() {
         return postcode;
     }
 
 
-    public int getHouseNumber() {
+    public String getHouseNumber() {
         return houseNumber;
     }
 
