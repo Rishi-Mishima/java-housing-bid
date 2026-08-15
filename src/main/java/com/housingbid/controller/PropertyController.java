@@ -7,4 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/properties")
 public class PropertyController {
+
+    @GetMapping
+    public String getProperty() {
+        return "HousingBid API is working";
+    }
 }
